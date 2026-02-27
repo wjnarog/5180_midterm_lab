@@ -4,7 +4,8 @@
             "addresses": {
                 "FastEthernet0/0": {
                     "v4": [
-                        "10.0.1.1"
+                        "10.0.1.1",
+                        "10.255.255.2"
                     ],
                     "v6": [
                         "2001:db8:2::/64"
@@ -16,8 +17,9 @@
             "addresses": {
                 "FastEthernet1/0": {
                     "v4": [
-                        "10.0.0.7",
-                        "10.0.1.9"
+                        "10.0.0.2",
+                        "10.0.1.9",
+                        "10.255.255.4"
                     ],
                     "v6": [
                         "2001:db8:1::/64",
@@ -30,8 +32,9 @@
             "addresses": {
                 "FastEthernet1/1": {
                     "v4": [
-                        "10.0.0.8",
-                        "10.0.1.8"
+                        "10.0.0.3",
+                        "10.0.1.8",
+                        "10.255.255.3"
                     ],
                     "v6": [
                         "2001:db8:1::/64",
@@ -44,11 +47,12 @@
             "addresses": {
                 "FastEthernet2/0": {
                     "v4": [
-                        "10.0.0.6",
+                        "10.0.0.1",
                         "198.51.100.1"
                     ],
                     "v6": [
-                        "2001:db8:1::/64"
+                        "2001:db8:1::/64",
+                        "2001:db8:3::/64"
                     ]
                 }
             }
@@ -57,7 +61,8 @@
             "addresses": {
                 "FastEthernet2/1": {
                     "v4": [
-                        "10.0.0.254"
+                        "10.0.0.254",
+                        "10.255.255.5"
                     ],
                     "v6": [
                         "2001:db8:1::/64"
@@ -71,7 +76,7 @@
             "FastEthernet0/0": "down",
             "FastEthernet1/0": "up",
             "FastEthernet1/1": "down",
-            "FastEthernet2/0": "down",
+            "FastEthernet2/0": "up",
             "FastEthernet2/1": "down",
             "GigabitEthernet3/0": "down"
         },
@@ -79,14 +84,14 @@
             "FastEthernet0/0": "up",
             "FastEthernet1/0": "up",
             "FastEthernet1/1": "down",
-            "GigabitEthernet2/0": "down",
+            "GigabitEthernet2/0": "up",
             "VoIP-Null0": "up"
         },
         "R3": {
             "FastEthernet0/0": "up",
             "FastEthernet1/0": "up",
             "FastEthernet1/1": "down",
-            "GigabitEthernet2/0": "down",
+            "GigabitEthernet2/0": "up",
             "VoIP-Null0": "up"
         },
         "R4": {
@@ -101,7 +106,7 @@
             "FastEthernet0/0": "up",
             "FastEthernet1/0": "down",
             "FastEthernet1/1": "down",
-            "FastEthernet2/0": "down",
+            "FastEthernet2/0": "up",
             "FastEthernet2/1": "down",
             "GigabitEthernet3/0": "down"
         }
